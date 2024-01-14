@@ -34,7 +34,10 @@
     "vite": "^5.0.11"
   },
   "lint-staged": {
-    "*.{js,jsx}": "npm run lint"
+    "*.{js,jsx}": [
+      "npm run lint",
+      "git add"
+    ]
   },
   "husky": {
     "hooks": {
