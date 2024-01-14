@@ -10,7 +10,8 @@
     "lint:fix": "eslint . --fix --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "format": "prettier . --write",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "pre-commit": "lint-staged"
   },
   "dependencies": {
     "date-fns": "^3.2.0",
