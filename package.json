@@ -36,6 +36,8 @@
     "vite": "^5.0.11"
   },
   "lint-staged": {
-    "*.jsx": "npm run lint"
+    "*.ts": "npx tsc --noEmit",
+    "*.{js,jsx,ts,tsx}": "npx eslint",
+    "*.{js,jsx,ts,tsx,html,css}": "npx prettier --check"
   }
 }
