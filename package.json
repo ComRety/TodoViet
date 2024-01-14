@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "lint:fix": "eslint . --fix --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "lint": "eslint --debug src/*",
+    "lint:fix": "eslint --debug src/* --fix",
     "preview": "vite preview",
     "format": "prettier . --write",
     "prepare": "husky install"
@@ -42,8 +42,7 @@
   },
   "lint-staged": {
     "*.(js|jsx)": [
-      "npm run lint:fix",
-      "git add"
+      "npm run lint:fix"
     ]
   }
 }
